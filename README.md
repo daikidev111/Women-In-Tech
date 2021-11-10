@@ -1,6 +1,8 @@
 
 Title: Sustainable Work through Women-in-tech Application for Older Women in Malaysia and Thailand: Integrating Action Research and Design Science Approach
 
+Application Link: https://fit3170-49455.web.app/
+
 # 0. Before you read
 
 The Empowering Women project is aimed to support communication between older women in ASEAN countries, help them discover new interests and support existing ones by providing recommendations based on their culture, background and other relevant information. The software is expected to provide multiple features in aid of achieving the goal. These features include the ability to post and interact with other users who share mutual interests, a recommendation system that allows users to browse content based on their interests and further educate themselves in various fields they find interesting. Lastly the application will have an administrator dashboard to collect the data on the users that will be shown to admins and researchers. This is to track the usual interest of older women and whether the goal of the application is achieved.
