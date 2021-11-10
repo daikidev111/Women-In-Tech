@@ -1,9 +1,13 @@
-﻿
-Handover Documents
 
-Sustainable Work through Women-in-tech Application for Older Women in Malaysia and Thailand: Integrating Action Research and Design Science Approach
+Title: Sustainable Work through Women-in-tech Application for Older Women in Malaysia and Thailand: Integrating Action Research and Design Science Approach
 
-#
+# 0. Before you read
+
+The Empowering Women project is aimed to support communication between older women in ASEAN countries, help them discover new interests and support existing ones by providing recommendations based on their culture, background and other relevant information. The software is expected to provide multiple features in aid of achieving the goal. These features include the ability to post and interact with other users who share mutual interests, a recommendation system that allows users to browse content based on their interests and further educate themselves in various fields they find interesting. Lastly the application will have an administrator dashboard to collect the data on the users that will be shown to admins and researchers. This is to track the usual interest of older women and whether the goal of the application is achieved.
+
+There were three teams of 5-6 people working on the following project. Each of them was responsible for one of the submodules: forum, chatbot and recommender. My team and I were responsible for the Forum submodule, Login functionality, Main Menu, and admin dashboard. My role in this project was Project manager, where the main responsibilities was to communicate with the clients and convert their requests into a technical backlog, which is to be implemented in each sprint of SaFe framework. Moreover, another responsibility for my role was to ensure that the team is on track and able to meet the clients' expectation as well as delivering the product on time. Lastly, I was responsible for the back-end functionalities of our submodules. I have also ensured that this application works relatively fast by improving the performance of the back-end feature by reducing the number of API connection returning an error, reducing the time complexity to loop through the JSON data, and so on. 
+
+
 # 1. Introduction
 
 This document outlines the third party dependencies that are required to start using the application, along with steps to set it up. These will be discussed in the sections below. Furthermore, the data structure that we have used in Firebase will be clarified to allow new developers familiarise with the data structure being applied. Additionally, a versioning strategy to be used for future releases will be discussed appropriately.
@@ -54,7 +58,7 @@ The project link in Firebase Realtime Database is provided as below:
 
 To initialize the project from your command line
 
-- firebase use --add (*project directory*)
+- firebase use --add fit3170-49455
 
 To test out the project and start the application
 
@@ -67,11 +71,6 @@ For any clarification, you can find the following video link to be helpful for y
 
 - <https://www.youtube.com/watch?v=qbxj_36UkWs> 
 
-Deploy Project
-
-Alternatively, to deploy the application, run the following command:
-
-- firebase deploy
 
 #
 # 3. Key Features
@@ -94,7 +93,7 @@ Question uploader logic is located in the various js files under public/chatbot/
 
 To re-upload questions with a new set of auto-generated IDs, The following steps shall be performed:
 
-\1. Link the question-uploader javascript file of the desired language in chatbot.html under filepath public/. 
+1. Link the question-uploader javascript file of the desired language in chatbot.html under filepath public/. 
 
 For example, for uploading of English questions, use 
 `<script src="chatbot/script/question-uploader/question-uploader\_en.js"></script>`, 
@@ -102,19 +101,19 @@ For example, for uploading of English questions, use
 For uploading of Chinese questions, use 
 `<script src="chatbot/script/question-uploader/question-uploader\_zh\_CN.js"></script>`
 
-\2. Call uploadQuestions() in the terminal, this would upload the questions to Firebase. It will also output a lot of logs in the console.
+2. Call uploadQuestions() in the terminal, this would upload the questions to Firebase. It will also output a lot of logs in the console.
 
 
-\3. Make sure uploadQuestions() has finished running. No new logs being printed in the console indicates this.
+3. Make sure uploadQuestions() has finished running. No new logs being printed in the console indicates this.
 
 
-\4. Call housekeeping() in the terminal.
+4. Call housekeeping() in the terminal.
 
 
-\5. Copy the IDs being displayed in the console log. And paste them inside constants.js, under the appropriate variable. Eg: for english questions, paste them to the variable QUESTION\_IDS\_EN, for malay, QUESTION\_IDS\_MS, etc. - This would link the correct question IDs to the chatbot.
+5. Copy the IDs being displayed in the console log. And paste them inside constants.js, under the appropriate variable. Eg: for english questions, paste them to the variable QUESTION\_IDS\_EN, for malay, QUESTION\_IDS\_MS, etc. - This would link the correct question IDs to the chatbot.
 
 
-\6. Your new set of questions will then be correctly referenced by the application.
+6. Your new set of questions will then be correctly referenced by the application.
 ### 3.1.4 User Interaction Logic
 User interaction logic is found in the first\_time\_survey.js file located under filepath public/script/
 ## 3.2 Web-based Recommender System
